@@ -33,7 +33,7 @@ public class ProductController {
     }
 
     @PostMapping("/create")
-    Mono<ProductDto> getProduct(ProductDto productDto){
+    Mono<ProductDto> createProduct(ProductDto productDto){
         return productService.createProduct(Mono.just(productDto));
     }
 
